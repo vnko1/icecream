@@ -4,3 +4,7 @@
   line-height: $lh / $fs;
   letter-spacing: $ls + em;
 }
+
+@mixin animation($type) {
+  transition: $type 250ms linear;
+}

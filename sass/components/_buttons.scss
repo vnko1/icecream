@@ -14,3 +14,18 @@
     stroke: color("white-color");
   }
 }
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  padding: 0;
+  border: none;
+  border-radius: 22px;
+  @include font(700, 16, 21, null);
+  background-color: colors("white-color");
+  color: color("accent-color");
+  &__icon {
+  }
+}
