@@ -7,7 +7,7 @@
     <path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2" d="M2.52 2l26.96 28M2 29.48l28-26.96"></path>
 </symbol>
 <symbol id="burger-icon" viewBox="0 0 46 32">
-    <path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2.2857" d="M0 2.286h45.714M0 16h45.714M0 29.714h45.714"></path>
+<path fill="none" style="stroke: var(--color1, #d41443)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2.2857" d="M0 2.286h45.714M0 16h45.714M0 29.714h45.714"></path>
 </symbol>
 <symbol id="logo-icon" viewBox="0 0 127 32">
     <path fill="#fff" style="fill: var(--color1, #fff)" d="M31.36 16.32c0 8.66-6.877 15.68-15.36 15.68s-15.36-7.020-15.36-15.68c0-8.66 6.877-15.68 15.36-15.68s15.36 7.020 15.36 15.68z"></path>

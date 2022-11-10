@@ -1,0 +1,16 @@
+.menu-btn {
+  @extend %flex-centred;
+  @extend %button;
+
+  &__icon {
+    stroke: color("accent-color");
+  }
+}
+
+.close-btn {
+  @extend %flex-centred;
+  @extend %button;
+  &__icon {
+    stroke: color("white-color");
+  }
+}

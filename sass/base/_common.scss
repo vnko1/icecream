@@ -1,0 +1,13 @@
+body {
+  font-family: $main-font;
+  font-size: 14px;
+  letter-spacing: 0.04em;
+}
+
+.container {
+  min-width: 320px;
+  // width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  @extend %centred;
+}

@@ -1,0 +1,16 @@
+%centred {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+%flex-centred {
+  display: flex;
+  align-items: center;
+  // justify-content: center;
+}
+
+%button {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+}
