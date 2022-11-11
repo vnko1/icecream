@@ -539,18 +539,41 @@ body {
 }
 
 .hero-list__item {
+  position: relative;
   display: flex;
   flex-direction: column;
 }
 .hero-list__item:first-child {
   margin-bottom: 16px;
 }
+.hero-list__item:first-child .hero-list__top-text {
+  align-self: center;
+}
+.hero-list__item:last-child .hero-list__top-text {
+  align-self: center;
+}
+.hero-list__item:first-child .hero-list__bottom-text {
+  align-self: center;
+}
 .hero-list__item:last-child .hero-list__bottom-text {
   align-self: flex-start;
 }
+.hero-list__item::after {
+  content: "";
+  position: absolute;
+  top: -1px;
+  right: -2px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  z-index: 0;
+}
 
 .hero-list__top-text {
-  align-self: center;
+  position: relative;
+  z-index: 1;
+  align-self: flex-start;
   font-family: "Titan One", sans-serif;
   font-weight: 400;
   font-size: 28px;
@@ -566,7 +589,7 @@ body {
   color: #ffffff;
 }
 
-.hero__circle {
+.hero__main-circle {
   position: absolute;
   left: 36px;
   top: 83px;
@@ -577,7 +600,7 @@ body {
   z-index: 1;
 }
 @media screen and (min-width: 768px) {
-  .hero__circle {
+  .hero__main-circle {
     left: 248px;
     top: 43px;
     width: 335px;
@@ -585,7 +608,7 @@ body {
   }
 }
 
-.hero__image {
+.hero__main-image {
   position: absolute;
   left: 117px;
   bottom: 0;
@@ -597,12 +620,12 @@ body {
   z-index: 1;
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .hero__image {
+  .hero__main-image {
     background-image: url(../images/ice-cream-320@2x.png);
   }
 }
 @media screen and (min-width: 768px) {
-  .hero__image {
+  .hero__main-image {
     left: 332px;
     bottom: 0;
     width: 143px;
@@ -611,7 +634,7 @@ body {
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
-  .hero__image {
+  .hero__main-image {
     background-image: url(../images/ice-cream-768@2x.png);
   }
 }/*# sourceMappingURL=main.css.map */
