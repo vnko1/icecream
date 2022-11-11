@@ -7,6 +7,11 @@
   position: relative;
   padding-top: 194px;
   padding-bottom: 158px;
+
+  @include contentMedia($tablet) {
+    padding-top: 102px;
+    padding-bottom: 190px;
+  }
 }
 
 .hero__content-container {
@@ -53,6 +58,12 @@
   top: 83px;
   width: 346px;
   height: 344px;
+  @include contentMedia($tablet) {
+    left: 248px;
+    top: 43px;
+    width: 335px;
+    height: 333px;
+  }
   border-radius: 50%;
   background-color: color("circle-bg");
   z-index: 1;
@@ -65,8 +76,16 @@
   width: 171px;
   height: 410px;
   background-image: url(../images/ice-cream-320.png);
-  @include retina(ice-cream-320, png);
+  @include retina(ice-cream, 320, png);
+  @include contentMedia($tablet) {
+    left: 332px;
+    bottom: 0;
+    width: 143px;
+    height: 336px;
+    background-image: url(../images/ice-cream-768.png);
+    @include retina(ice-cream, 768, png);
+  }
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   z-index: 1;
 }
