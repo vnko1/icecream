@@ -5,6 +5,10 @@
   &__icon {
     stroke: color("accent-color");
   }
+
+  @include contentMedia($desktop) {
+    display: none;
+  }
 }
 
 .close-btn {

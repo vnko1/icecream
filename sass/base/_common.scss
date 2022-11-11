@@ -10,11 +10,15 @@ body {
   padding-left: 20px;
   padding-right: 20px;
   @extend %centred;
-
   @include contentMedia($tablet) {
     min-width: $tablet;
     padding-left: 32px;
     padding-right: 32px;
+  }
+  @include contentMedia($desktop) {
+    width: $desktop;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 }
 

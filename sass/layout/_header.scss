@@ -3,12 +3,36 @@
   @include contentMedia($tablet) {
     padding-top: 32px;
   }
+
+  @include contentMedia($desktop) {
+    padding-top: 37px;
+  }
+  background-color: gray;
 }
 
 .header__container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.nav-list {
+  display: none;
+  @include contentMedia($desktop) {
+    display: flex;
+    gap: 35px;
+  }
+}
+
+.nav-list__link {
+  @include font(700, 16, 21, null);
+  color: color("white-color");
+  @include animation(color);
+
+  &:hover,
+  &:focus {
+    color: color("accent-color");
+  }
 }
 
 .btn-container {

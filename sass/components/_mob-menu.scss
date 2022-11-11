@@ -26,17 +26,14 @@
   margin-bottom: 26px;
 }
 
-.button-container {
-  padding: 0 20px;
-}
-
 .menu__button {
-  width: 100%;
+  width: 209px;
   height: 44px;
+  @extend %centred;
   margin-bottom: 32px;
 }
 
-.nav-list__item {
+.menu-nav__item {
   padding-left: 20px;
   border-top: 0.5px solid color("mob-border");
   border-bottom: 0.5px solid color("mob-border");
@@ -66,7 +63,7 @@
   }
 }
 
-.nav-list__link {
+.menu-nav__link {
   @include font(700, 14, 18, null);
   color: color("white-color");
   @include animation(color);
