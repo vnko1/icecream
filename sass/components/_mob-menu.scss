@@ -5,8 +5,15 @@
   width: 78%;
   height: 100%;
   padding: 20px 0;
+  transform: translateX(0);
+  transition: visibility 250ms linear, opacity 250ms linear,
+    transform 250ms linear;
   background-color: color("pink-color");
   overflow-y: auto;
+
+  &.is-hidden {
+    transform: translateX(100%);
+  }
 }
 
 .menu__close-btn {

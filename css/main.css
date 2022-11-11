@@ -245,6 +245,16 @@ body {
   padding-right: 20px;
 }
 
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
 .menu-btn__icon {
   stroke: #d41443;
 }
@@ -280,8 +290,13 @@ body {
   width: 78%;
   height: 100%;
   padding: 20px 0;
+  transform: translateX(0);
+  transition: visibility 250ms linear, opacity 250ms linear, transform 250ms linear;
   background-color: #e17992;
   overflow-y: auto;
+}
+.menu.is-hidden {
+  transform: translateX(100%);
 }
 
 .menu__close-btn {
