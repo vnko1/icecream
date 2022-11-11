@@ -2,7 +2,7 @@
   font-weight: $fw;
   font-size: $fs + px;
   line-height: $lh / $fs;
-  letter-spacing: $ls + em;
+  letter-spacing: $ls;
 }
 
 @mixin animation($type) {

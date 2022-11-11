@@ -186,6 +186,7 @@ summary {
   padding: 0;
   background-color: transparent;
   border: none;
+  cursor: pointer;
 }
 
 p,
@@ -256,30 +257,41 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 16px;
   padding: 0;
   border: none;
   border-radius: 22px;
+  background-color: #ffffff;
+  color: #d41443;
+  cursor: pointer;
+}
+.button__text {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.3125;
-  letter-spacing: em;
-  background-color: colors("white-color");
-  color: #d41443;
 }
+.button__icon {
+  margin-left: 16px;
+}
+
 .menu {
   position: fixed;
   top: 0;
   right: 0;
   width: 78%;
   height: 100%;
-  padding: 20px;
+  padding: 20px 0;
   background-color: #e17992;
+  overflow-y: auto;
 }
 
 .menu__close-btn {
   margin-left: auto;
+  margin-right: 20px;
   margin-bottom: 26px;
+}
+
+.button-container {
+  padding: 0 20px;
 }
 
 .menu__button {
@@ -289,30 +301,37 @@ body {
 }
 
 .nav-list__item {
-  border-top: 1px solid #e18298;
-  border-bottom: 1px solid #e18298;
+  padding-left: 20px;
+  border-top: 0.5px solid #e18298;
+  border-bottom: 0.5px solid #e18298;
 }
 .nav-list__item:first-child {
-  padding: 13px 0 11px;
+  padding-top: 13px;
+  padding-bottom: 11px;
+  border-top: 1px solid #e18298;
 }
 .nav-list__item:nth-child(2) {
-  padding: 11px 0 12px;
+  padding-top: 11px;
+  padding-bottom: 12px;
 }
 .nav-list__item:nth-child(3) {
-  padding: 11px 0 13px;
+  padding-top: 11px;
+  padding-bottom: 13px;
 }
 .nav-list__item:nth-child(4) {
-  padding: 10px 0 13px;
+  padding-top: 10px;
+  padding-bottom: 13px;
 }
 .nav-list__item:last-child {
-  padding: 10px 0 14px;
+  padding-top: 10px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid #e18298;
 }
 
 .nav-list__link {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.2857142857;
-  letter-spacing: em;
   color: #ffffff;
   transition: color 250ms linear;
 }
