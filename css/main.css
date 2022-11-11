@@ -381,7 +381,6 @@ body {
 
 .header {
   padding-top: 8px;
-  background-color: gray;
 }
 @media screen and (min-width: 768px) {
   .header {
