@@ -47,7 +47,7 @@
   @include font(400, 8, 10, null);
 }
 
-.hero__image-thumb {
+.hero__circle {
   position: absolute;
   left: 36px;
   top: 83px;
@@ -55,5 +55,24 @@
   height: 344px;
   border-radius: 50%;
   background-color: color("circle-bg");
+  z-index: 1;
+}
+
+.hero__image {
+  position: absolute;
+  left: 117px;
+  bottom: 0;
+  width: 171px;
+  height: 410px;
+  background-image: url(../images/ice-cream-320.png);
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/ice-cream-320@2x.png);
+  }
+
+  background-repeat: no-repeat;
+  background-size: contain;
   z-index: 1;
 }
