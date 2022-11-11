@@ -459,6 +459,8 @@ body {
   position: relative;
   padding-top: 194px;
   padding-bottom: 158px;
+  display: flex;
+  justify-content: space-between;
 }
 @media screen and (min-width: 768px) {
   .hero__container {
@@ -482,11 +484,26 @@ body {
   letter-spacing: 0.04em;
   color: #ffffff;
 }
+@media screen and (min-width: 768px) {
+  .hero__title {
+    width: 162px;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 1.1363636364;
+    letter-spacing: 0.04em;
+  }
+}
 
 .hero__title--accent {
   font-size: 48px;
   line-height: 96.5%;
   color: #d41443;
+}
+@media screen and (min-width: 768px) {
+  .hero__title--accent {
+    font-size: 34px;
+    line-height: 90.5%;
+  }
 }
 
 .hero__btn-container {
@@ -510,6 +527,43 @@ body {
   font-weight: 400;
   font-size: 8px;
   line-height: 1.25;
+}
+
+.hero-list {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .hero-list {
+    display: block;
+  }
+}
+
+.hero-list__item {
+  display: flex;
+  flex-direction: column;
+}
+.hero-list__item:first-child {
+  margin-bottom: 16px;
+}
+.hero-list__item:last-child .hero-list__bottom-text {
+  align-self: flex-start;
+}
+
+.hero-list__top-text {
+  align-self: center;
+  font-family: "Titan One", sans-serif;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 1.1428571429;
+  letter-spacing: 0.04em;
+  color: #d41443;
+}
+
+.hero-list__bottom-text {
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 1.25;
+  color: #ffffff;
 }
 
 .hero__circle {

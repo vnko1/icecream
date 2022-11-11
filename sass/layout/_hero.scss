@@ -7,6 +7,8 @@
   position: relative;
   padding-top: 194px;
   padding-bottom: 158px;
+  display: flex;
+  justify-content: space-between;
 
   @include contentMedia($tablet) {
     padding-top: 102px;
@@ -24,12 +26,20 @@
   margin-bottom: 20px;
   font-family: $secondary-font;
   @include font(400, 26, 30, 0.04em);
+  @include contentMedia($tablet) {
+    width: 162px;
+    @include font(400, 22, 25, 0.04em);
+  }
   color: color("white-color");
 }
 
 .hero__title--accent {
   font-size: 48px;
   line-height: 96.5%;
+  @include contentMedia($tablet) {
+    font-size: 34px;
+    line-height: 90.5%;
+  }
   color: color("accent-color");
 }
 
@@ -50,6 +60,41 @@
   height: 24px;
   border-radius: 20px;
   @include font(400, 8, 10, null);
+}
+
+.hero-list {
+  display: none;
+  @include contentMedia($tablet) {
+    display: block;
+  }
+}
+.hero-list__item {
+  display: flex;
+  flex-direction: column;
+
+  &:first-child {
+    margin-bottom: 16px;
+  }
+
+  &:first-child .hero-list__bottom-text {
+    // align-self: flex-end;
+  }
+
+  &:last-child .hero-list__bottom-text {
+    align-self: flex-start;
+  }
+}
+
+.hero-list__top-text {
+  align-self: center;
+  font-family: $secondary-font;
+  @include font(400, 28, 32, 0.04em);
+  color: color("accent-color");
+}
+
+.hero-list__bottom-text {
+  @include font(400, 8, 10, null);
+  color: color("white-color");
 }
 
 .hero__circle {
