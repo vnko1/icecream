@@ -2,7 +2,11 @@
   position: fixed;
   top: 0;
   right: 0;
-  width: 78%;
+  // width: 78%;
+  width: 250px;
+  @include contentMedia($tablet) {
+    width: 254px;
+  }
   height: 100%;
   padding: 20px 0;
   transform: translateX(0);

@@ -25,6 +25,12 @@
   background-color: color("white-color");
   color: color("accent-color");
   cursor: pointer;
+  @include animation(background-color);
+
+  &:hover,
+  &:focus {
+    background-color: color("btn-hover");
+  }
 
   &__text {
     @include font(700, 16, 21, null);

@@ -6,10 +6,16 @@ body {
 
 .container {
   min-width: 320px;
-  // width: 100%;
+  width: 100%;
   padding-left: 20px;
   padding-right: 20px;
   @extend %centred;
+
+  @include contentMedia($tablet) {
+    min-width: $tablet;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
 }
 
 .is-hidden {

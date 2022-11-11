@@ -1,11 +1,13 @@
 $main-font: "DM Sans", sans-serif;
 $secondary-font: "Titan One", sans-serif;
+$tablet: 768px;
 
 $colors: (
   "accent-color": #d41443,
   "white-color": #ffffff,
   "pink-color": #e17992,
   "mob-border": #e18298,
+  "btn-hover": #ecebeb,
 );
 
 @function color($key) {

@@ -8,3 +8,15 @@
 @mixin animation($type) {
   transition: $type 250ms linear;
 }
+
+@mixin media($width) {
+  @media screen and (min-width: $width) {
+    min-width: $width;
+  }
+}
+
+@mixin contentMedia($width) {
+  @media screen and (min-width: $width) {
+    @content;
+  }
+}
