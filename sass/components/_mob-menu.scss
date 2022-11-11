@@ -29,8 +29,10 @@
 .menu__button {
   width: 209px;
   height: 44px;
+
   @extend %centred;
   margin-bottom: 32px;
+  border-radius: 22px;
 }
 
 .menu-nav__item {

@@ -43,6 +43,7 @@
   display: none;
   width: 160px;
   height: 44px;
+  border-radius: 22px;
   @include contentMedia($tablet) {
     display: block;
   }
