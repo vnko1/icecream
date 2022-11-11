@@ -333,6 +333,10 @@ body {
   transform: translateX(100%);
 }
 
+.menu-container {
+  position: relative;
+}
+
 .menu__close-btn {
   margin-left: auto;
   margin-right: 20px;
@@ -386,7 +390,11 @@ body {
 }
 
 .header {
+  position: absolute;
+  top: 0;
+  width: 100%;
   padding-top: 8px;
+  z-index: 3;
 }
 @media screen and (min-width: 768px) {
   .header {
@@ -441,4 +449,71 @@ body {
   .header__button {
     display: block;
   }
+}
+
+.hero {
+  background-color: #ffb8ca;
+}
+
+.hero__container {
+  overflow: hidden;
+  position: relative;
+  padding-top: 194px;
+  padding-bottom: 158px;
+}
+
+.hero__content-container {
+  position: relative;
+  z-index: 2;
+}
+
+.hero__title {
+  width: 218px;
+  margin-bottom: 20px;
+  font-family: "Titan One", sans-serif;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 1.1538461538;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+}
+
+.hero__title--accent {
+  font-size: 48px;
+  line-height: 96.5%;
+  color: #d41443;
+}
+
+.hero__btn-container {
+  display: flex;
+  gap: 8px;
+}
+
+.hero__left-button {
+  width: 62.4px;
+  height: 24px;
+  border-radius: 20px;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 1.25;
+}
+
+.hero__right-button {
+  width: 82.8px;
+  height: 24px;
+  border-radius: 20px;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 1.25;
+}
+
+.hero__image-thumb {
+  position: absolute;
+  left: 36px;
+  top: 83px;
+  width: 346px;
+  height: 344px;
+  border-radius: 50%;
+  background-color: #ffa5ba;
+  z-index: 1;
 }/*# sourceMappingURL=main.css.map */

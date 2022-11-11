@@ -1,0 +1,59 @@
+.hero {
+  background-color: color("hero-bg");
+}
+
+.hero__container {
+  overflow: hidden;
+  position: relative;
+  padding-top: 194px;
+  padding-bottom: 158px;
+}
+
+.hero__content-container {
+  position: relative;
+  z-index: 2;
+}
+
+.hero__title {
+  width: 218px;
+  margin-bottom: 20px;
+  font-family: $secondary-font;
+  @include font(400, 26, 30, 0.04em);
+  color: color("white-color");
+}
+
+.hero__title--accent {
+  font-size: 48px;
+  line-height: 96.5%;
+  color: color("accent-color");
+}
+
+.hero__btn-container {
+  display: flex;
+  gap: 8px;
+}
+
+.hero__left-button {
+  width: 62.4px;
+  height: 24px;
+  border-radius: 20px;
+  @include font(400, 8, 10, null);
+}
+
+.hero__right-button {
+  width: 82.8px;
+  height: 24px;
+  border-radius: 20px;
+  @include font(400, 8, 10, null);
+}
+
+.hero__image-thumb {
+  position: absolute;
+  left: 36px;
+  top: 83px;
+  width: 346px;
+  height: 344px;
+  border-radius: 50%;
+  background-color: color("circle-bg");
+  z-index: 1;
+}
