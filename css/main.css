@@ -677,7 +677,7 @@ body {
 .hero__main-circle {
   position: absolute;
   left: 36px;
-  top: 83px;
+  bottom: 75px;
   width: 346px;
   height: 344px;
   border-radius: 50%;
@@ -687,7 +687,7 @@ body {
 @media screen and (min-width: 768px) {
   .hero__main-circle {
     left: 248px;
-    top: 43px;
+    bottom: 40px;
     width: 335px;
     height: 333px;
   }
@@ -695,7 +695,7 @@ body {
 @media screen and (min-width: 1200px) {
   .hero__main-circle {
     left: 517px;
-    top: 54px;
+    bottom: 77px;
     width: 534px;
     height: 534px;
   }
@@ -733,7 +733,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .hero__main-image {
-    left: 620px;
+    left: 636px;
     bottom: 0;
     width: 236px;
     height: 557px;
