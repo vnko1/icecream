@@ -158,4 +158,32 @@
 }
 
 .hero__left-image {
+  display: none;
+  position: absolute;
+  bottom: 16px;
+  width: 152px;
+  height: 154px;
+  background-image: url(../images/hero-milk-768.png);
+  @include retina(hero-milk, 768, png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  @include contentMedia($tablet) {
+    display: block;
+  }
+}
+
+.hero__bottom-content {
+  display: none;
+
+  @include contentMedia($tablet) {
+    display: block;
+  }
+}
+
+.bottom-content__text {
+  max-width: 200px;
+  color: color("white-color");
+  line-height: 1.4;
+}
+.bottom-content__link {
 }

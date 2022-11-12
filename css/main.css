@@ -637,4 +637,40 @@ body {
   .hero__main-image {
     background-image: url(../images/ice-cream-768@2x.png);
   }
+}
+
+.hero__left-image {
+  display: none;
+  position: absolute;
+  bottom: 16px;
+  width: 152px;
+  height: 154px;
+  background-image: url(../images/hero-milk-768.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero__left-image {
+    background-image: url(../images/hero-milk-768@2x.png);
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero__left-image {
+    display: block;
+  }
+}
+
+.hero__bottom-content {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .hero__bottom-content {
+    display: block;
+  }
+}
+
+.bottom-content__text {
+  max-width: 200px;
+  color: #ffffff;
+  line-height: 1.4;
 }/*# sourceMappingURL=main.css.map */
