@@ -7,12 +7,26 @@
   position: relative;
   padding-top: 194px;
   padding-bottom: 158px;
-  display: flex;
-  justify-content: space-between;
 
   @include contentMedia($tablet) {
     padding-top: 102px;
-    padding-bottom: 190px;
+    padding-bottom: 16px;
+  }
+
+  @include contentMedia($desktop) {
+    padding-top: 147px;
+    padding-bottom: 60px;
+  }
+}
+
+.hero__top-container {
+  display: flex;
+  justify-content: space-between;
+  @include contentMedia($tablet) {
+    margin-bottom: 20px;
+  }
+  @include contentMedia($desktop) {
+    margin-bottom: 40px;
   }
 }
 
@@ -22,13 +36,18 @@
 }
 
 .hero__title {
-  width: 218px;
+  max-width: 218px;
   margin-bottom: 20px;
   font-family: $secondary-font;
   @include font(400, 26, 30, 0.04em);
   @include contentMedia($tablet) {
-    width: 162px;
+    max-width: 162px;
     @include font(400, 22, 25, 0.04em);
+  }
+  @include contentMedia($desktop) {
+    max-width: 277px;
+    margin-bottom: 24px;
+    @include font(400, 38, 44, 0.04em);
   }
   color: color("white-color");
 }
@@ -38,7 +57,12 @@
   line-height: 96.5%;
   @include contentMedia($tablet) {
     font-size: 34px;
-    line-height: 90.5%;
+    line-height: calc(31 / 34);
+  }
+
+  @include contentMedia($desktop) {
+    font-size: 58px;
+    line-height: calc(52 / 58);
   }
   color: color("accent-color");
 }
@@ -46,6 +70,9 @@
 .hero__btn-container {
   display: flex;
   gap: 8px;
+  @include contentMedia($tablet) {
+    gap: 12px;
+  }
 }
 
 .hero__left-button {
@@ -53,6 +80,11 @@
   height: 24px;
   border-radius: 20px;
   @include font(400, 8, 10, null);
+  @include contentMedia($tablet) {
+    width: 107px;
+    height: 40px;
+    @include font(400, 14, 18, null);
+  }
 }
 
 .hero__right-button {
@@ -60,6 +92,11 @@
   height: 24px;
   border-radius: 20px;
   @include font(400, 8, 10, null);
+  @include contentMedia($tablet) {
+    width: 138px;
+    height: 40px;
+    @include font(400, 14, 18, null);
+  }
 }
 
 .hero-list {
@@ -75,6 +112,9 @@
 
   &:first-child {
     margin-bottom: 16px;
+    @include contentMedia($desktop) {
+      margin-bottom: 15px;
+    }
   }
 
   &:first-child .hero-list__top-text {
@@ -99,6 +139,10 @@
     right: -2px;
     width: 16px;
     height: 16px;
+    @include contentMedia($desktop) {
+      width: 30px;
+      height: 30px;
+    }
     border-radius: 50%;
     background-color: color("white-color");
     z-index: 0;
@@ -111,11 +155,18 @@
   align-self: flex-start;
   font-family: $secondary-font;
   @include font(400, 28, 32, 0.04em);
+  @include contentMedia($desktop) {
+    margin-bottom: 2px;
+    @include font(400, 46, 53, 0.04em);
+  }
   color: color("accent-color");
 }
 
 .hero-list__bottom-text {
   @include font(400, 8, 10, null);
+  @include contentMedia($desktop) {
+    @include font(400, 14, 18, null);
+  }
   color: color("white-color");
 }
 
@@ -130,6 +181,12 @@
     top: 43px;
     width: 335px;
     height: 333px;
+  }
+  @include contentMedia($desktop) {
+    left: 517px;
+    top: 54px;
+    width: 534px;
+    height: 534px;
   }
   border-radius: 50%;
   background-color: color("circle-bg");
@@ -152,15 +209,29 @@
     background-image: url(../images/ice-cream-768.png);
     @include retina(ice-cream, 768, png);
   }
+
+  @include contentMedia($desktop) {
+    left: 620px;
+    bottom: 0;
+    width: 236px;
+    height: 557px;
+    background-image: url(../images/ice-cream-1200.png);
+    @include retina(ice-cream, 1200, png);
+  }
   background-repeat: no-repeat;
   background-size: contain;
   z-index: 1;
 }
 
+.hero__bottom-container {
+  display: flex;
+}
+
 .hero__left-image {
   display: none;
-  position: absolute;
-  bottom: 16px;
+  // position: absolute;
+  // left: 32px;
+  // bottom: 16px;
   width: 152px;
   height: 154px;
   background-image: url(../images/hero-milk-768.png);
@@ -170,10 +241,26 @@
   @include contentMedia($tablet) {
     display: block;
   }
+
+  @include contentMedia($desktop) {
+    width: 213px;
+    height: 216px;
+    background-image: url(../images/hero-milk-1200.png);
+    @include retina(hero-milk, 1200, png);
+  }
 }
 
 .hero__bottom-content {
   display: none;
+  // position: absolute;
+  max-width: 114px;
+  padding-top: 41px;
+  @include contentMedia($desktop) {
+    max-width: 200px;
+  }
+  // left: 184px;
+  // bottom: 56px;
+  z-index: 1;
 
   @include contentMedia($tablet) {
     display: block;
@@ -181,9 +268,58 @@
 }
 
 .bottom-content__text {
-  max-width: 200px;
+  margin-bottom: 7px;
+  font-size: 7px;
+  line-height: calc(12 / 7);
+  @include contentMedia($desktop) {
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: calc(20 / 14);
+  }
   color: color("white-color");
-  line-height: 1.4;
 }
+
 .bottom-content__link {
+  display: block;
+  width: 18px;
+  height: 18px;
+  background-image: url(../images/arrow-right-768.png);
+  @include retina(arrow-right, 768, png);
+
+  @include contentMedia($desktop) {
+    width: 26px;
+    height: 26px;
+    background-image: url(../images/arrow-right-1200.png);
+    @include retina(arrow-right, 1200, png);
+  }
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.hero__right-image {
+  display: none;
+  margin-left: auto;
+  position: relative;
+  bottom: -20px;
+  // position: absolute;
+  // right: 32px;
+  // bottom: 0px;
+  width: 190px;
+  height: 150px;
+  background-image: url(../images/tasty-girl-768.png);
+  @include retina(tasty-girl, 768, png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  @include contentMedia($tablet) {
+    display: block;
+  }
+  @include contentMedia($desktop) {
+    bottom: -60px;
+    width: 304px;
+    height: 241px;
+    background-image: url(../images/tasty-girl-1200.png);
+    @include retina(tasty-girl, 1200, png);
+  }
+  z-index: 1;
 }
