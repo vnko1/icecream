@@ -468,7 +468,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .hero__container {
-    padding-top: 147px;
+    padding-top: 140px;
     padding-bottom: 60px;
   }
 }
@@ -864,7 +864,9 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .hero__right-image {
-    bottom: -60px;
+    position: absolute;
+    right: 16px;
+    bottom: 0px;
     width: 304px;
     height: 241px;
     background-image: url(../images/tasty-girl-1200.png);

@@ -14,7 +14,7 @@
   }
 
   @include contentMedia($desktop) {
-    padding-top: 147px;
+    padding-top: 140px;
     padding-bottom: 60px;
   }
 }
@@ -313,15 +313,17 @@
   @include retina(tasty-girl, 768, png);
   background-repeat: no-repeat;
   background-size: contain;
+  z-index: 1;
   @include contentMedia($tablet) {
     display: block;
   }
   @include contentMedia($desktop) {
-    bottom: -60px;
+    position: absolute;
+    right: 16px;
+    bottom: 0px;
     width: 304px;
     height: 241px;
     background-image: url(../images/tasty-girl-1200.png);
     @include retina(tasty-girl, 1200, png);
   }
-  z-index: 1;
 }
