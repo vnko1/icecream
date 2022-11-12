@@ -103,6 +103,7 @@
   display: none;
   @include contentMedia($tablet) {
     display: block;
+    padding-top: 5px;
   }
 }
 .hero-list__item {
