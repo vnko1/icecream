@@ -52,7 +52,7 @@
   color: color("white-color");
 }
 
-.hero__title--accent {
+.title__accent {
   font-size: 48px;
   line-height: 96.5%;
   @include contentMedia($tablet) {

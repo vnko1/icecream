@@ -523,19 +523,19 @@ body {
   }
 }
 
-.hero__title--accent {
+.title__accent {
   font-size: 48px;
   line-height: 96.5%;
   color: #d41443;
 }
 @media screen and (min-width: 768px) {
-  .hero__title--accent {
+  .title__accent {
     font-size: 34px;
     line-height: 0.9117647059;
   }
 }
 @media screen and (min-width: 1200px) {
-  .hero__title--accent {
+  .title__accent {
     font-size: 58px;
     line-height: 0.8965517241;
   }
