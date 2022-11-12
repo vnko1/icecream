@@ -559,7 +559,7 @@ body {
   font-size: 8px;
   line-height: 1.25;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .hero__left-button {
     width: 107px;
     height: 40px;
@@ -577,7 +577,7 @@ body {
   font-size: 8px;
   line-height: 1.25;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .hero__right-button {
     width: 138px;
     height: 40px;
