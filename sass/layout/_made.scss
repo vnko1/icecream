@@ -2,12 +2,22 @@
   position: relative;
   background-color: color("made-bg");
   padding-bottom: 87px;
+  @include contentMedia(600px) {
+    padding-bottom: 125px;
+  }
   @include contentMedia($tablet) {
     padding-bottom: 251px;
   }
 
+  @include contentMedia(1176px) {
+    padding-bottom: 300px;
+  }
+
   @include contentMedia($desktop) {
     padding-bottom: 209px;
+  }
+  @include contentMedia(2450px) {
+    padding-bottom: 400px;
   }
 }
 

@@ -1105,14 +1105,29 @@ body {
   background-color: #fff5f6;
   padding-bottom: 87px;
 }
+@media screen and (min-width: 600px) {
+  .made {
+    padding-bottom: 125px;
+  }
+}
 @media screen and (min-width: 768px) {
   .made {
     padding-bottom: 251px;
   }
 }
+@media screen and (min-width: 1176px) {
+  .made {
+    padding-bottom: 300px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .made {
     padding-bottom: 209px;
+  }
+}
+@media screen and (min-width: 2450px) {
+  .made {
+    padding-bottom: 400px;
   }
 }
 
