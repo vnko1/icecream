@@ -263,7 +263,7 @@
         </div>
       </section>
       <section class="made section">
-        <div class="container">
+        <div class="made__container container">
           <h2 class="made__section-title section-title">
             tradition and love
             <span class="section-title__accent">how it’s made?</span>
@@ -338,7 +338,27 @@
               </p>
             </li>
           </ul>
+          <div class="grid">
+            <picture>
+              <source
+                srcset="./images/grid-1200.png 1x, ./images/grid-1200@2x.png 2x"
+                media="(min-width: 1200px)" />
+              <source
+                srcset="./images/grid-768.png 1x, ./images/grid-768@2x.png 2x"
+                media="(min-width: 768px)" />
+              <source
+                srcset="./images/grid-320.png 1x, ./images/grid-320@2x.png 2x"
+                media="(max-width: 767px)" />
+              <img
+                src="./images/grid-320.png"
+                alt="products"
+                class="grid__image"
+            /></picture>
+          </div>
         </div>
+      </section>
+      <section class="section">
+        <div class="container"></div>
       </section>
     </main>
     <footer></footer>

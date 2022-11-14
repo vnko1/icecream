@@ -1101,12 +1101,30 @@ body {
 }
 
 .made {
+  position: relative;
   background-color: #fff5f6;
   padding-bottom: 87px;
 }
 @media screen and (min-width: 768px) {
   .made {
     padding-bottom: 251px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .made {
+    padding-bottom: 209px;
+  }
+}
+
+.made__container {
+  background-image: url(../../images/splash-1200.png);
+  background-repeat: no-repeat;
+  background-position: 0 40%;
+  background-size: contain;
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .made__container {
+    background-image: url(../images/splash-1200@2x.png);
   }
 }
 
@@ -1138,14 +1156,6 @@ body {
   .made__content {
     display: flex;
     gap: 99px;
-    background-image: url(../../images/splash-1200.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
-}
-@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
-  .made__content {
-    background-image: url(../images/splash-120@2x.png);
   }
 }
 
@@ -1332,4 +1342,27 @@ body {
     line-height: 1.75;
     letter-spacing: 0.02em;
   }
+}
+
+.grid {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  transform: translateY(65%);
+}
+@media screen and (min-width: 768px) {
+  .grid {
+    transform: translateY(50%);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .grid {
+    padding: 0 93px;
+    transform: translateY(78%);
+  }
+}
+
+.grid__image {
+  width: 100%;
 }/*# sourceMappingURL=main.css.map */

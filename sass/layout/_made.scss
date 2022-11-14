@@ -1,9 +1,22 @@
 .made {
+  position: relative;
   background-color: color("made-bg");
   padding-bottom: 87px;
   @include contentMedia($tablet) {
     padding-bottom: 251px;
   }
+
+  @include contentMedia($desktop) {
+    padding-bottom: 209px;
+  }
+}
+
+.made__container {
+  background-image: url(../../images/splash-1200.png);
+  @include retina(splash, 1200, png);
+  background-repeat: no-repeat;
+  background-position: 0 40%;
+  background-size: contain;
 }
 
 .made__section-title {
@@ -26,10 +39,6 @@
   @include contentMedia($desktop) {
     display: flex;
     gap: 99px;
-    background-image: url(../../images/splash-1200.png);
-    @include retina(splash, 120, png);
-    background-repeat: no-repeat;
-    background-size: contain;
   }
 }
 
@@ -154,4 +163,23 @@
   @include contentMedia($desktop) {
     @include font(700, 16, 28, 0.02em);
   }
+}
+
+.grid {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  transform: translateY(65%);
+  @include contentMedia($tablet) {
+    transform: translateY(50%);
+  }
+  @include contentMedia($desktop) {
+    padding: 0 93px;
+    transform: translateY(78%);
+  }
+}
+
+.grid__image {
+  width: 100%;
 }
