@@ -1,10 +1,3 @@
-.about {
-  padding-top: 60px;
-  padding-bottom: 60px;
-  @include contentMedia($desktop) {
-  }
-}
-
 .about__section-title {
   margin-bottom: 148px;
 
@@ -14,44 +7,6 @@
 
   @include contentMedia($desktop) {
     margin-bottom: 281px;
-  }
-}
-
-.section-title {
-  max-width: 200px;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  font-family: $secondary-font;
-  @include font(400, 18, 21, null);
-  text-transform: uppercase;
-  color: color("circle-bg");
-
-  @include contentMedia($tablet) {
-    max-width: 283px;
-    @include font(400, 26, 30, null);
-  }
-
-  @include contentMedia($desktop) {
-    max-width: 394px;
-    @include font(400, 30, 34, null);
-  }
-}
-
-.section-title__accent {
-  display: inline-block;
-  padding-top: 15px;
-  @include font(400, 34, 39, 0.04em);
-  color: color("accent-color");
-
-  @include contentMedia($tablet) {
-    padding-top: 18px;
-    @include font(400, 45, 50, 0.04em);
-  }
-
-  @include contentMedia($desktop) {
-    padding-top: 16px;
-    @include font(400, 58, 66, 0.06em);
   }
 }
 
