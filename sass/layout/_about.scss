@@ -69,7 +69,10 @@
 .cards__item {
   position: relative;
   width: 100%;
-
+  padding-top: 160px;
+  padding-bottom: 40px;
+  padding-left: 41px;
+  padding-right: 39px;
   border-radius: 24px;
 
   @media screen and (max-width: 767px) {
@@ -80,10 +83,18 @@
 
   @include contentMedia($tablet) {
     width: calc((100% - (16px * 2)) / 3);
+    padding-top: 118px;
+    padding-bottom: 40px;
+    padding-left: 32px;
+    padding-right: 32px;
   }
 
   @include contentMedia($desktop) {
     width: calc((100% - (32px * 2)) / 3);
+    padding-top: 165px;
+    padding-bottom: 60px;
+    padding-left: 61px;
+    padding-right: 62px;
   }
 
   &:first-child {
@@ -101,34 +112,44 @@
 .cards__image {
   position: absolute;
   left: 50%;
-  top: -140px;
-  transform: translateX(-50%);
+  top: 0;
+  transform: translate(-50%, -50%);
   @include contentMedia($tablet) {
-    top: -112px;
+    transform: translate(-50%, -60%);
   }
   @include contentMedia($desktop) {
-    top: -261px;
+    transform: translate(-50%, -70%);
   }
+
+  // left: 50%;
+  // top: -140px;
+  // transform: translateX(-50%)
+  // @include contentMedia($tablet) {
+  //   top: -112px;
+  // }
+  // @include contentMedia($desktop) {
+  //   top: -261px;
+  // }
 }
 
-.cards__container {
-  padding-top: 160px;
-  padding-bottom: 40px;
-  padding-left: 41px;
-  padding-right: 39px;
-  @include contentMedia($tablet) {
-    padding-top: 118px;
-    padding-bottom: 40px;
-    padding-left: 32px;
-    padding-right: 32px;
-  }
-  @include contentMedia($desktop) {
-    padding-top: 165px;
-    padding-bottom: 60px;
-    padding-left: 61px;
-    padding-right: 62px;
-  }
-}
+// .cards__container {
+//   padding-top: 160px;
+//   padding-bottom: 40px;
+//   padding-left: 41px;
+//   padding-right: 39px;
+//   @include contentMedia($tablet) {
+//     padding-top: 118px;
+//     padding-bottom: 40px;
+//     padding-left: 32px;
+//     padding-right: 32px;
+//   }
+//   @include contentMedia($desktop) {
+//     padding-top: 165px;
+//     padding-bottom: 60px;
+//     padding-left: 61px;
+//     padding-right: 62px;
+//   }
+// }
 
 .cards__title {
   margin-bottom: 32px;

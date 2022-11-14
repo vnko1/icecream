@@ -968,6 +968,10 @@ body {
 .cards__item {
   position: relative;
   width: 100%;
+  padding-top: 160px;
+  padding-bottom: 40px;
+  padding-left: 41px;
+  padding-right: 39px;
   border-radius: 24px;
 }
 @media screen and (max-width: 767px) {
@@ -978,11 +982,19 @@ body {
 @media screen and (min-width: 768px) {
   .cards__item {
     width: calc((100% - 32px) / 3);
+    padding-top: 118px;
+    padding-bottom: 40px;
+    padding-left: 32px;
+    padding-right: 32px;
   }
 }
 @media screen and (min-width: 1200px) {
   .cards__item {
     width: calc((100% - 64px) / 3);
+    padding-top: 165px;
+    padding-bottom: 60px;
+    padding-left: 61px;
+    padding-right: 62px;
   }
 }
 .cards__item:first-child {
@@ -998,40 +1010,17 @@ body {
 .cards__image {
   position: absolute;
   left: 50%;
-  top: -140px;
-  transform: translateX(-50%);
+  top: 0;
+  transform: translate(-50%, -50%);
 }
 @media screen and (min-width: 768px) {
   .cards__image {
-    top: -112px;
+    transform: translate(-50%, -60%);
   }
 }
 @media screen and (min-width: 1200px) {
   .cards__image {
-    top: -261px;
-  }
-}
-
-.cards__container {
-  padding-top: 160px;
-  padding-bottom: 40px;
-  padding-left: 41px;
-  padding-right: 39px;
-}
-@media screen and (min-width: 768px) {
-  .cards__container {
-    padding-top: 118px;
-    padding-bottom: 40px;
-    padding-left: 32px;
-    padding-right: 32px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .cards__container {
-    padding-top: 165px;
-    padding-bottom: 60px;
-    padding-left: 61px;
-    padding-right: 62px;
+    transform: translate(-50%, -70%);
   }
 }
 
