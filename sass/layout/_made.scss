@@ -11,6 +11,9 @@
   @include contentMedia($tablet) {
     margin-bottom: 40px;
   }
+  @include contentMedia($desktop) {
+    margin-bottom: 60px;
+  }
 }
 
 .made__content {
@@ -19,6 +22,14 @@
     display: flex;
     gap: 32px;
     margin-bottom: 60px;
+  }
+  @include contentMedia($desktop) {
+    display: flex;
+    gap: 99px;
+    background-image: url(../../images/splash-1200.png);
+    @include retina(splash, 120, png);
+    background-repeat: no-repeat;
+    background-size: contain;
   }
 }
 
@@ -34,8 +45,8 @@
 
   @include mwContentMedia($tablet) {
     padding-right: 60px;
-
     background-image: url(../../images/splash-320.png);
+    @include retina(splash, 320, png);
     background-repeat: no-repeat;
     background-position: 0 30%;
     background-size: contain;
@@ -46,6 +57,9 @@
   @include contentMedia($tablet) {
     width: calc(50% - 32px);
   }
+  @include contentMedia($desktop) {
+    width: calc(50% - 94px);
+  }
 }
 
 .made__top-text {
@@ -53,6 +67,10 @@
   @include font(500, 12, 19, null);
   @include contentMedia($tablet) {
     @include font(500, 14, 25, null);
+  }
+  @include contentMedia($desktop) {
+    padding-top: 90px;
+    @include font(500, 16, 28, 0.04em);
   }
 }
 
@@ -63,6 +81,9 @@
   @include contentMedia($tablet) {
     margin-bottom: 40px;
     @include font(500, 14, 25, 0.04em);
+  }
+  @include contentMedia($desktop) {
+    @include font(500, 14, 27, 0.04em);
   }
 }
 
@@ -81,6 +102,9 @@
   @include contentMedia($tablet) {
     display: flex;
   }
+  @include contentMedia($desktop) {
+    gap: 115px;
+  }
 }
 
 .made-list__item {
@@ -92,10 +116,20 @@
   @include contentMedia($tablet) {
     width: calc((100% - 175px) / 3);
   }
+
+  @include contentMedia($desktop) {
+    @include calc(115px, 3);
+  }
 }
 
 .made-list__icon {
   margin-bottom: 16px;
+  @include contentMedia($tablet) {
+    margin-bottom: 36px;
+  }
+  @include contentMedia($desktop) {
+    margin-bottom: 40px;
+  }
 }
 
 .made-list__top-text {
@@ -103,8 +137,21 @@
   font-family: $secondary-font;
   @include font(400, 36, 41, 0.04em);
   color: color("accent-color");
+  @include contentMedia($tablet) {
+    @include font(400, 48, 55, 0.04em);
+  }
+  @include contentMedia($desktop) {
+    @include font(400, 58, 66, 0.04em);
+  }
 }
 
 .made-list__bottom-text {
   @include font(700, 12, 20, null);
+
+  @include contentMedia($tablet) {
+    @include font(700, 14, 24, 0.04em);
+  }
+  @include contentMedia($desktop) {
+    @include font(700, 16, 28, 0.02em);
+  }
 }
