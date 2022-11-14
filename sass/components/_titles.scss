@@ -9,12 +9,12 @@
   color: color("circle-bg");
 
   @include contentMedia($tablet) {
-    max-width: 283px;
+    // max-width: 283px;
     @include font(400, 26, 30, null);
   }
 
   @include contentMedia($desktop) {
-    max-width: 394px;
+    // max-width: 394px;
     @include font(400, 30, 34, null);
   }
 }
