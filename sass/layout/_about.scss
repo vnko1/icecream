@@ -82,7 +82,7 @@
   }
 
   @include contentMedia($tablet) {
-    width: calc((100% - (16px * 2)) / 3);
+    @include calc(16px, 3);
     padding-top: 118px;
     padding-bottom: 40px;
     padding-left: 32px;
@@ -90,7 +90,7 @@
   }
 
   @include contentMedia($desktop) {
-    width: calc((100% - (32px * 2)) / 3);
+    @include calc(32px, 3);
     padding-top: 165px;
     padding-bottom: 60px;
     padding-left: 61px;
