@@ -1,0 +1,187 @@
+.wrap {
+  //   background-image: linear-gradient(to bottom, #ffffff 25%, #fff5f6 25%);
+}
+
+.locations {
+  padding-bottom: 32px;
+
+  @include contentMedia($tablet) {
+    padding-bottom: 60px;
+  }
+}
+
+.locations__container {
+  @include contentMedia($tablet) {
+    padding: 0 16px;
+  }
+}
+
+.container {
+}
+
+.locations-card {
+  @include contentMedia($tablet) {
+    display: flex;
+    gap: 32px;
+  }
+}
+
+.locations-card__item {
+  padding: 40px 32px;
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+  background-color: color("white-color");
+
+  @include mwContentMedia($tablet) {
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+  @include contentMedia($tablet) {
+    @include calc(32px, 3);
+  }
+
+  @include contentMedia($desktop) {
+    padding: 40px;
+  }
+}
+
+.locations-card__tittle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  @include font(500, 12, 22, null);
+  color: color("white-color");
+  border-radius: 4px;
+  @include contentMedia($tablet) {
+    margin-bottom: 32px;
+    @include font(500, 16, 30, 0.04em);
+  }
+
+  .locations-card__item:not(:nth-child(2)) & {
+    max-width: 80px;
+    background-color: #f0d1a5;
+
+    @include contentMedia($tablet) {
+      max-width: 73px;
+    }
+
+    @include contentMedia($desktop) {
+      max-width: 75px;
+    }
+  }
+
+  .locations-card__item:nth-child(2) & {
+    max-width: 130px;
+    background-color: #c2e297;
+    @include contentMedia($tablet) {
+      max-width: 138px;
+    }
+  }
+}
+
+.locations-card__top-text {
+  margin-bottom: 8px;
+  @include font(500, 12, 22, 0.04em);
+
+  @include contentMedia($tablet) {
+    margin-bottom: 12px;
+    @include font(500, 14, 26, 0.04em);
+
+    @include contentMedia($desktop) {
+      margin-bottom: 8px;
+      @include font(500, 16, 30, 0.04em);
+    }
+  }
+}
+
+.locations-card__bottom-text {
+  max-width: 185px;
+  margin-bottom: 24px;
+  @include font(500, 12, 18, null);
+  color: #907e82;
+
+  @include contentMedia($tablet) {
+    margin-bottom: 32px;
+    @include font(500, 14, 23, null);
+  }
+
+  @include contentMedia($desktop) {
+    max-width: 250px;
+    @include font(500, 16, 29, 0.04em);
+  }
+}
+
+.hours-list {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  @include contentMedia($tablet) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+  border-top: 1px solid #e1e1e1;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.hours-list__item {
+  &:not(:last-child) {
+    margin-bottom: 8px;
+  }
+
+  @include contentMedia($tablet) {
+    &:not(:last-child) {
+      margin-bottom: 12px;
+    }
+  }
+}
+
+.hours-list__top-text {
+  @include font(500, 12, 22, null);
+
+  @include contentMedia($tablet) {
+    @include font(500, 14, 26, null);
+  }
+
+  @include contentMedia($desktop) {
+    @include font(500, 16, 30, 0.04em);
+  }
+}
+
+.hours-list__bottom-text {
+  @include font(500, 12, 22, null);
+  color: #ffa5ba;
+
+  @include contentMedia($tablet) {
+    @include font(500, 14, 26, null);
+  }
+
+  @include contentMedia($desktop) {
+    @include font(500, 16, 30, null);
+  }
+}
+
+.contacts-list {
+  padding-top: 24px;
+  @include contentMedia($tablet) {
+    padding-top: 32px;
+  }
+}
+
+.contacts-list__link {
+  @include font(500, 12, 18, null);
+  color: #907e82;
+
+  @include contentMedia($tablet) {
+    @include font(500, 14, 26, null);
+  }
+
+  @include contentMedia($desktop) {
+    @include font(500, 16, 29, null);
+  }
+
+  &:hover,
+  &:focus {
+    color: #d41443;
+  }
+}
