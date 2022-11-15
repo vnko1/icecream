@@ -359,7 +359,47 @@
       </section>
       <section class="reviews section">
         <div class="container">
-          <picture><img src="" alt="girl" /></picture>
+          <picture
+            ><source
+              srcset="./images/emily-320.png 1x, ./images/emily-320@2x.png 2x"
+              media="(max-width: 767px)" />
+            <img src="./images/emily-320.png" alt="girl" class="reviews__image"
+          /></picture>
+
+          <div class="reviews__content-container content-container">
+            <div class="reviews__text-container text-container">
+              <svg class="text-container__icon" width="54" height="40">
+                <use href="./images/sprite.svg#icon-coma"></use>
+              </svg>
+              <p class="reviews__text">
+                Nullam viverra<br />
+                consectetuer. Quisque<br />
+                cursus et, porttitor risus.<br />
+                Aliquam sem. In hendrerit<br />
+                nulla quam nunc,<br />
+                accumsan congue. Lorem<br />
+                ipsum primis in nibh vel<br />
+                risus.
+              </p>
+            </div>
+          </div>
+          <div class="reviews__selector selector">
+            <div class="icons">
+              <div class="middle-icon"></div>
+            </div>
+            <p class="selector__text">Emily, Los Angeles</p>
+            <ul class="selector__point-list">
+              <li class="point-list__item">
+                <a href="" class="point-list__link"></a>
+              </li>
+              <li class="point-list__item">
+                <a href="" class="point-list__link"></a>
+              </li>
+              <li class="point-list__item">
+                <a href="" class="point-list__link"></a>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
     </main>
