@@ -7,6 +7,9 @@
   @include contentMedia($tablet) {
     padding-bottom: 80px;
   }
+  @include contentMedia(1000px) {
+    padding-top: 400px;
+  }
 
   @include contentMedia($desktop) {
     padding-top: 461px;
@@ -15,6 +18,9 @@
 
   @include contentMedia(1700px) {
     padding-top: 650px;
+  }
+  @include contentMedia(2400px) {
+    padding-top: 800px;
   }
 }
 
@@ -33,11 +39,15 @@
   background-color: #fafafa;
   @include contentMedia($tablet) {
     max-width: 620px;
-    margin-bottom: 4px;
     padding: 20px 6px 36px;
+    margin-bottom: 4px;
     background-color: transparent;
   }
   @include contentMedia($desktop) {
+    max-width: 968px;
+    padding: 32px 74px 31px 72px;
+    margin-bottom: 16px;
+    background-color: #fafafa;
   }
 }
 
@@ -54,6 +64,11 @@
     left: 8%;
     top: -20%;
   }
+
+  @include contentMedia($desktop) {
+    left: 7%;
+    top: -20%;
+  }
 }
 
 .reviews__text {
@@ -62,9 +77,14 @@
   padding-bottom: 9px;
   @include font(500, 12, 31, null);
   @include contentMedia($tablet) {
-    @include font(500, 14, 30, 0.04em);
     padding-left: 44px;
     padding-right: 49px;
+    @include font(500, 14, 30, 0.04em);
+  }
+  @include contentMedia($desktop) {
+    padding-left: 36px;
+    padding-right: 35px;
+    @include font(500, 16, 30, 0.04em);
   }
   text-align: center;
   text-indent: 5%;
@@ -111,6 +131,10 @@
   text-align: center;
   @include contentMedia($tablet) {
     margin-bottom: 32px;
+    @include font(500, 16, 30, null);
+  }
+  @include contentMedia($desktop) {
+    @include font(500, 20, 37, null);
   }
 }
 
