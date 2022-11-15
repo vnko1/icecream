@@ -1,17 +1,44 @@
 .reviews {
   padding-top: 169px;
-  padding-bottom: 362px;
+  padding-bottom: 60px;
+  @include contentMedia(600px) {
+    padding-top: 200px;
+  }
+  @include contentMedia($tablet) {
+    padding-bottom: 80px;
+  }
+
+  @include contentMedia($desktop) {
+    padding-top: 461px;
+    padding-bottom: 120px;
+  }
+
+  @include contentMedia(1700px) {
+    padding-top: 650px;
+  }
 }
 
 .reviews__image {
   @extend %centred;
   margin-bottom: 32px;
+  @include contentMedia($tablet) {
+    margin-bottom: 20px;
+  }
 }
 
 .reviews__content-container {
   padding: 43px 50px 17px;
+  @extend %centred;
   margin-bottom: 16px;
   background-color: #fafafa;
+  @include contentMedia($tablet) {
+    max-width: 620px;
+    margin-bottom: 4px;
+    padding: 20px 6px 36px;
+    background-color: transparent;
+  }
+  @include contentMedia($desktop) {
+  }
 }
 
 .reviews__text-container {
@@ -23,6 +50,10 @@
   z-index: 1;
   left: 0;
   top: -5%;
+  @include contentMedia($tablet) {
+    left: 8%;
+    top: -20%;
+  }
 }
 
 .reviews__text {
@@ -30,9 +61,13 @@
   z-index: 2;
   padding-bottom: 9px;
   @include font(500, 12, 31, null);
+  @include contentMedia($tablet) {
+    @include font(500, 14, 30, 0.04em);
+    padding-left: 44px;
+    padding-right: 49px;
+  }
   text-align: center;
   text-indent: 5%;
-
   color: #000000;
   background: repeating-linear-gradient(
     to bottom,
@@ -74,6 +109,9 @@
   margin-bottom: 16px;
   @include font(500, 14, 26, null);
   text-align: center;
+  @include contentMedia($tablet) {
+    margin-bottom: 32px;
+  }
 }
 
 .selector__point-list {
