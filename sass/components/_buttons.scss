@@ -48,5 +48,9 @@
   }
   &__icon {
     margin-left: 16px;
+
+    &--light {
+      stroke: #ffffff;
+    }
   }
 }

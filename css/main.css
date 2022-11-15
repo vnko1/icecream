@@ -314,6 +314,9 @@ body {
 .button__icon {
   margin-left: 16px;
 }
+.button__icon--light {
+  stroke: #ffffff;
+}
 
 .menu {
   position: fixed;
@@ -1811,5 +1814,128 @@ body {
   }
 }
 .contacts-list__link:hover, .contacts-list__link:focus {
+  color: #d41443;
+}
+
+.contacts {
+  padding-bottom: 40px;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+@media screen and (min-width: 768px) {
+  .contacts__btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 14.5px;
+    margin-bottom: 40px;
+  }
+}
+
+.contacts__button {
+  width: 161px;
+  height: 44px;
+  border-radius: 22px;
+}
+@media screen and (max-width: 767px) {
+  .contacts__button {
+    margin: 0 auto;
+  }
+  .contacts__button:first-child {
+    margin-bottom: 10px;
+  }
+  .contacts__button:last-child {
+    margin-bottom: 40px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .contacts__button:first-child {
+    width: 191px;
+  }
+  .contacts__button:last-child {
+    width: 174px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contacts__main-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.contacts__title {
+  margin-bottom: 40px;
+  font-family: "Titan One", sans-serif;
+  text-transform: uppercase;
+}
+
+.contacts__top-title {
+  display: block;
+  max-width: 232px;
+  margin-bottom: 16px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.1666666667;
+  color: #ffa5ba;
+}
+@media screen and (min-width: 768px) {
+  .contacts__top-title {
+    max-width: 340px;
+    margin-bottom: 12px;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 1.1538461538;
+    letter-spacing: 0.04em;
+  }
+}
+
+.contacts__bottom-title {
+  display: block;
+  max-width: 200px;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 1.1470588235;
+  letter-spacing: 0.04em;
+  color: #d41443;
+}
+@media screen and (min-width: 768px) {
+  .contacts__bottom-title {
+    max-width: 340px;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 1.1458333333;
+    letter-spacing: 0.06em;
+  }
+}
+
+.soc {
+  display: flex;
+  gap: 28px;
+  justify-content: flex-end;
+  margin-bottom: 40px;
+}
+
+.soc__item {
+  width: 32px;
+  height: 32px;
+  background-color: tomato;
+}
+
+.contacts__text {
+  text-align: right;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.8333333333;
+}
+@media screen and (min-width: 768px) {
+  .contacts__text {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.8571428571;
+  }
+}
+
+.contacts__tel-link {
   color: #d41443;
 }/*# sourceMappingURL=main.css.map */
