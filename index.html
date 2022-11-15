@@ -364,6 +364,24 @@
             src="./images/emily-320.png"
             alt="girl"
             class="reviews__image"
+            id="emily"
+          />
+          <img
+            srcset="./images/jane-320.png 1x, ./images/jane-320@2x.png 2x"
+            src="./images/jane-320.png"
+            alt="girl"
+            class="reviews__image"
+            id="jane"
+          />
+          <img
+            srcset="
+              ./images/charlynne-320.png    1x,
+              ./images/charlynne-320@2x.png 2x
+            "
+            src="./images/charlynne-320.png"
+            alt="girl"
+            class="reviews__image is-active"
+            id="charlynne"
           />
           <div class="reviews__content-container content-container">
             <div class="reviews__text-container text-container">
@@ -384,15 +402,7 @@
             <p class="selector__text">Emily, Los Angeles</p>
             <ul class="selector__point-list">
               <li class="point-list__item">
-                <a href="" class="point-list__link">
-                  <svg class="point-list__icon is-open" width="12" height="12">
-                    <use href="./images/sprite.svg#icon-home"></use>
-                  </svg>
-                  <div class="point-list__point"></div>
-                </a>
-              </li>
-              <li class="point-list__item">
-                <a href="" class="point-list__link">
+                <a href="#emily" class="point-list__link is-active">
                   <svg class="point-list__icon" width="12" height="12">
                     <use href="./images/sprite.svg#icon-home"></use>
                   </svg>
@@ -400,7 +410,15 @@
                 </a>
               </li>
               <li class="point-list__item">
-                <a href="" class="point-list__link">
+                <a href="#jane" class="point-list__link">
+                  <svg class="point-list__icon" width="12" height="12">
+                    <use href="./images/sprite.svg#icon-home"></use>
+                  </svg>
+                  <div class="point-list__point"></div>
+                </a>
+              </li>
+              <li class="point-list__item">
+                <a href="#charlynne" class="point-list__link">
                   <svg class="point-list__icon" width="12" height="12">
                     <use href="./images/sprite.svg#icon-home"></use>
                   </svg>
