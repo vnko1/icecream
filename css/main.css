@@ -1821,6 +1821,11 @@ body {
   padding-bottom: 40px;
   border-bottom: 1px solid #e1e1e1;
 }
+@media screen and (min-width: 1200px) {
+  .contacts {
+    padding-bottom: 60px;
+  }
+}
 
 @media screen and (min-width: 768px) {
   .contacts__btn-container {
@@ -1828,6 +1833,12 @@ body {
     justify-content: center;
     gap: 14.5px;
     margin-bottom: 40px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts__btn-container {
+    margin-bottom: 120px;
+    gap: 12px;
   }
 }
 
@@ -1853,6 +1864,14 @@ body {
   }
   .contacts__button:last-child {
     width: 174px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts__button:first-child {
+    width: 198px;
+  }
+  .contacts__button:last-child {
+    width: 168px;
   }
 }
 
@@ -1889,6 +1908,16 @@ body {
     letter-spacing: 0.04em;
   }
 }
+@media screen and (min-width: 1200px) {
+  .contacts__top-title {
+    max-width: 100%;
+    margin-bottom: 16px;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 1.1333333333;
+    letter-spacing: 0.04em;
+  }
+}
 
 .contacts__bottom-title {
   display: block;
@@ -1908,6 +1937,15 @@ body {
     letter-spacing: 0.06em;
   }
 }
+@media screen and (min-width: 1200px) {
+  .contacts__bottom-title {
+    max-width: 100%;
+    font-weight: 400;
+    font-size: 58px;
+    line-height: 1.1379310345;
+    letter-spacing: 0.06em;
+  }
+}
 
 .soc {
   display: flex;
@@ -1915,11 +1953,34 @@ body {
   justify-content: flex-end;
   margin-bottom: 40px;
 }
+@media screen and (min-width: 768px) {
+  .soc {
+    gap: 30px;
+  }
+}
 
-.soc__item {
+.soc__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 32px;
   height: 32px;
-  background-color: tomato;
+  border-radius: 50%;
+  background-color: #fea5bb;
+  transition: background-color 250ms linear;
+}
+.soc__link:hover, .soc__link:focus {
+  background-color: #d41443;
+}
+@media screen and (min-width: 768px) {
+  .soc__link {
+    width: 34px;
+    height: 34px;
+  }
+}
+
+.soc__icon {
+  fill: #ffffff;
 }
 
 .contacts__text {
@@ -1933,6 +1994,14 @@ body {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.8571428571;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts__text {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.875;
+    letter-spacing: 0.02em;
   }
 }
 
