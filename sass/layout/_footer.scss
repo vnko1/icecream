@@ -1,0 +1,33 @@
+.footer {
+  padding-top: 16px;
+  padding-bottom: 3px;
+
+  @include contentMedia($tablet) {
+    padding-top: 8px;
+    padding-bottom: 4px;
+  }
+
+  @include contentMedia($desktop) {
+    padding-top: 7px;
+    padding-bottom: 4px;
+  }
+}
+
+.copyright {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  @include font(700, 14, 21, null);
+  color: #907e82;
+
+  @include contentMedia($tablet) {
+    flex-direction: row;
+    @include font(700, 14, 26, 0.02em);
+  }
+}
+
+.copyright__top-text {
+}
+.copyright__bottom-text {
+}

@@ -1580,6 +1580,20 @@ body {
   display: none;
 }
 
+.wrap {
+  background-image: linear-gradient(to bottom, #ffffff 17%, #fff5f6 17%);
+}
+@media screen and (min-width: 768px) {
+  .wrap {
+    background-image: linear-gradient(to bottom, #ffffff 33%, #fff5f6 33%);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .wrap {
+    background-image: linear-gradient(to bottom, #ffffff 10%, #fff5f6 10%);
+  }
+}
+
 .locations {
   padding-bottom: 32px;
 }
@@ -2007,4 +2021,41 @@ body {
 
 .contacts__tel-link {
   color: #d41443;
+}
+
+.footer {
+  padding-top: 16px;
+  padding-bottom: 3px;
+}
+@media screen and (min-width: 768px) {
+  .footer {
+    padding-top: 8px;
+    padding-bottom: 4px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer {
+    padding-top: 7px;
+    padding-bottom: 4px;
+  }
+}
+
+.copyright {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #907e82;
+}
+@media screen and (min-width: 768px) {
+  .copyright {
+    flex-direction: row;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.8571428571;
+    letter-spacing: 0.02em;
+  }
 }/*# sourceMappingURL=main.css.map */

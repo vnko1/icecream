@@ -1,5 +1,13 @@
 .wrap {
-  //   background-image: linear-gradient(to bottom, #ffffff 25%, #fff5f6 25%);
+  background-image: linear-gradient(to bottom, #ffffff 17%, #fff5f6 17%);
+
+  @include contentMedia($tablet) {
+    background-image: linear-gradient(to bottom, #ffffff 33%, #fff5f6 33%);
+  }
+
+  @include contentMedia($desktop) {
+    background-image: linear-gradient(to bottom, #ffffff 10%, #fff5f6 10%);
+  }
 }
 
 .locations {
