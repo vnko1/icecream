@@ -1,23 +1,13 @@
 .made {
-  position: relative;
   background-color: color("made-bg");
-  padding-bottom: 87px;
-  @include contentMedia(600px) {
-    padding-bottom: 125px;
-  }
-  @include contentMedia($tablet) {
-    padding-bottom: 251px;
-  }
+  padding-bottom: 60px;
 
-  @include contentMedia(1176px) {
-    padding-bottom: 300px;
+  @include contentMedia($tablet) {
+    padding-bottom: 64px;
   }
 
   @include contentMedia($desktop) {
-    padding-bottom: 209px;
-  }
-  @include contentMedia(2450px) {
-    padding-bottom: 400px;
+    padding-bottom: 120px;
   }
 }
 
@@ -173,23 +163,4 @@
   @include contentMedia($desktop) {
     @include font(700, 16, 28, 0.02em);
   }
-}
-
-.grid {
-  position: absolute;
-  width: 100%;
-  bottom: 0;
-  left: 0;
-  transform: translateY(65%);
-  @include contentMedia($tablet) {
-    transform: translateY(50%);
-  }
-  @include contentMedia($desktop) {
-    padding: 0 93px;
-    transform: translateY(78%);
-  }
-}
-
-.grid__image {
-  width: 100%;
 }

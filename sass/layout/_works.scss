@@ -1,0 +1,51 @@
+.works {
+  background-image: linear-gradient(
+    to bottom,
+    color("made-bg") 20%,
+    color("white-color") 20%
+  );
+  @include contentMedia($tablet) {
+    background-image: linear-gradient(
+      to bottom,
+      color("made-bg") 50%,
+      color("white-color") 50%
+    );
+  }
+
+  @include contentMedia($desktop) {
+    background-image: linear-gradient(
+      to bottom,
+      color("made-bg") 20%,
+      color("white-color") 20%
+    );
+  }
+}
+
+.works__container {
+  padding: 0 0;
+  @include contentMedia($desktop) {
+    padding: 0 94px;
+  }
+}
+
+.container {
+}
+
+.grid {
+  //   position: absolute;
+  //   width: 100%;
+  //   bottom: 0;
+  //   left: 0;
+  //   transform: translateY(65%);
+  //   @include contentMedia($tablet) {
+  //     transform: translateY(50%);
+  //   }
+  //   @include contentMedia($desktop) {
+  //     padding: 0 93px;
+  //     transform: translateY(78%);
+  //   }
+}
+
+.grid__image {
+  width: 100%;
+}

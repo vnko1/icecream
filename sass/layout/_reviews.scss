@@ -1,26 +1,10 @@
 .reviews {
-  padding-top: 169px;
+  padding-top: 60px;
   padding-bottom: 60px;
-  @include contentMedia(600px) {
-    padding-top: 200px;
-  }
-  @include contentMedia($tablet) {
-    padding-bottom: 80px;
-  }
-  @include contentMedia(920px) {
-    padding-top: 350px;
-  }
 
   @include contentMedia($desktop) {
-    padding-top: 461px;
+    padding-top: 120px;
     padding-bottom: 120px;
-  }
-
-  @include contentMedia(1700px) {
-    padding-top: 650px;
-  }
-  @include contentMedia(2400px) {
-    padding-top: 850px;
   }
 }
 

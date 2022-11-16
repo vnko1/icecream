@@ -1104,33 +1104,17 @@ body {
 }
 
 .made {
-  position: relative;
   background-color: #fff5f6;
-  padding-bottom: 87px;
-}
-@media screen and (min-width: 600px) {
-  .made {
-    padding-bottom: 125px;
-  }
+  padding-bottom: 60px;
 }
 @media screen and (min-width: 768px) {
   .made {
-    padding-bottom: 251px;
-  }
-}
-@media screen and (min-width: 1176px) {
-  .made {
-    padding-bottom: 300px;
+    padding-bottom: 64px;
   }
 }
 @media screen and (min-width: 1200px) {
   .made {
-    padding-bottom: 209px;
-  }
-}
-@media screen and (min-width: 2450px) {
-  .made {
-    padding-bottom: 400px;
+    padding-bottom: 120px;
   }
 }
 
@@ -1362,22 +1346,26 @@ body {
   }
 }
 
-.grid {
-  position: absolute;
-  width: 100%;
-  bottom: 0;
-  left: 0;
-  transform: translateY(65%);
+.works {
+  background-image: linear-gradient(to bottom, #fff5f6 20%, #ffffff 20%);
 }
 @media screen and (min-width: 768px) {
-  .grid {
-    transform: translateY(50%);
+  .works {
+    background-image: linear-gradient(to bottom, #fff5f6 50%, #ffffff 50%);
   }
 }
 @media screen and (min-width: 1200px) {
-  .grid {
-    padding: 0 93px;
-    transform: translateY(78%);
+  .works {
+    background-image: linear-gradient(to bottom, #fff5f6 20%, #ffffff 20%);
+  }
+}
+
+.works__container {
+  padding: 0 0;
+}
+@media screen and (min-width: 1200px) {
+  .works__container {
+    padding: 0 94px;
   }
 }
 
@@ -1386,38 +1374,13 @@ body {
 }
 
 .reviews {
-  padding-top: 169px;
+  padding-top: 60px;
   padding-bottom: 60px;
-}
-@media screen and (min-width: 600px) {
-  .reviews {
-    padding-top: 200px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .reviews {
-    padding-bottom: 80px;
-  }
-}
-@media screen and (min-width: 920px) {
-  .reviews {
-    padding-top: 350px;
-  }
 }
 @media screen and (min-width: 1200px) {
   .reviews {
-    padding-top: 461px;
+    padding-top: 120px;
     padding-bottom: 120px;
-  }
-}
-@media screen and (min-width: 1700px) {
-  .reviews {
-    padding-top: 650px;
-  }
-}
-@media screen and (min-width: 2400px) {
-  .reviews {
-    padding-top: 850px;
   }
 }
 
